@@ -37,8 +37,6 @@ var dessert = [
   "macaroons"
 ]
 
-
-/* <button class="add-recipe-button">ADD A RECIPE</button> */
 var letsCookButton = document.querySelector('.lets-cook-button')
 var cookPotImage = document.querySelector('.cook-pot-img')
 var viewDishGenerated = document.querySelector('.dish-generated')
@@ -63,13 +61,13 @@ function renderRandomDish() {
   viewDishGenerated.classList.remove('hidden')
   console.log(dishSelect)
   if (dishSelect === 'side') {
-    itemGenerated.innerText = randomSide.toUpperCase(randomSide)+"!"
+    itemGenerated.innerText = randomSide.charAt(0).toUpperCase() + randomSide.slice(1)+"!"
   }
   else if (dishSelect === 'mainDish') {
-    itemGenerated.innerText = randomMainDish.toUpperCase(randomMainDish)+"!"
+    itemGenerated.innerText = randomMainDish.charAt(0).toUpperCase() + randomMainDish.slice(1)+"!"
   }
   else if (dishSelect === 'dessert') {
-    itemGenerated.innerText = randomDessert.toUpperCase(randomDessert)+"!"
+    itemGenerated.innerText = randomDessert.charAt(0).toUpperCase() + randomDessert.slice(1)+"!"
   } else {
     console.log("hi")
   }
