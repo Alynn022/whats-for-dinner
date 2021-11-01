@@ -5,7 +5,15 @@
   </head>
   <body>
     <section class="topNav">
-      <h1 class="title">What's for Dinner?</h1>
+      <div>
+        <h1 class="title">What's for Dinner?</h1>
+        <button class="go-to-login-button">Login</button>
+      </div>
+      <section class="view login-bar hidden">
+        <label for="login">Name</label>
+        <input class="user-name" type="text" id="userName"/>
+        <button class="login-button"> Login</button>
+      </section>
     </section>
     <section class="home-page">
       <section class="what-are-you-looking-for">
@@ -28,11 +36,10 @@
         <section class="view dish-generated hidden">
           <h2 class="you-should-make">You should make:</h2>
           <h1 class="item-generated">Chicken Fried Steak!</h1>
-          <div><button class="clear-button">CLEAR</button></div>
         </section>
       </section>
     </section>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="data.js"></script>
   </body>
-  <script type="text/javascript" src="main.js"></script>
-  <script type="text/javascript" src="data.js"></script>
 </html>
