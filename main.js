@@ -63,5 +63,5 @@ function displayNameHP() {
   title.classList.add('hidden')
 
   topNav.innerHTML += `<div>
-    <h1 class="title">What's for Dinner, ${userNameInput.value}?</h1></div>`
+    <h1 class="title">Hi, ${userNameInput.value}! What would you like for dinner?</h1></div>`
 }
